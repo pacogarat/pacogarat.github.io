@@ -17,7 +17,7 @@
   <script src="vp/marked-1.0.0.min.js"></script>
   <link href="vp/vp-style-1.3.3.min.css" rel="stylesheet" />
   <script>
-        window.svgpublish = {"shapes":{"shape20":{"ShapeId":"shape20","Text":"","IsContainer":true,"ContainerText":"Ingestion CSV Autobiz Tasaciones -> Anuncios","ContainerCategories":"","MasterName":"CFF Container"},"shape23":{"ShapeId":"shape23","Text":"","IsContainer":true,"ContainerText":"","ContainerCategories":"","MasterName":"Swimlane List"},"shape17":{"ShapeId":"shape17","Text":"","IsContainer":true,"ContainerText":"Comando","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape28":{"ShapeId":"shape28","Text":"","IsContainer":true,"ContainerText":"Anunciante/Usuario","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape31":{"ShapeId":"shape31","Text":"","IsContainer":true,"ContainerText":"Anuncio","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape34":{"ShapeId":"shape34","Text":"","IsContainer":true,"ContainerText":"Mail","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape194":{"ShapeId":"shape194","Text":"","IsContainer":true,"ContainerText":"Log","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape24":{"ShapeId":"shape24","Text":"","IsContainer":true,"ContainerText":"","ContainerCategories":"","MasterName":"Phase List"},"shape25":{"ShapeId":"shape25","Text":"","IsContainer":true,"ContainerText":"","ContainerCategories":"Phase","MasterName":"Separator (vertical)"},"shape356":{"ShapeId":"shape356","Props":{"":"Anunciante/Usuario"},"Layers":[3],"Text":"","IsContainer":true,"ContainerText":"GetOrCreateParticularAdvertiser","ContainerCategories":"Container","MasterName":"Subsystem"},"shape361":{"ShapeId":"shape361","Props":{"":"Anuncio"},"Layers":[3],"Text":"","IsContainer":true,"ContainerText":"CreateAd","ContainerCategories":"Container","MasterName":"Subsystem"},"shape46":{"ShapeId":"shape46","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape197"],"ConnectedFrom":["shape343"],"Layers":[1],"Text":"Cargar fila de csv","MasterName":"Start/End"},"shape197":{"ShapeId":"shape197","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape205"],"ConnectedFrom":["shape46"],"Layers":[1],"Text":"Extraer datos del usuario","MasterName":"Start/End"},"shape198":{"ShapeId":"shape198","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape200":{"ShapeId":"shape200","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape215","shape228","shape235"],"ConnectedFrom":["shape205"],"Layers":[1],"Text":"Crear Usuario","MasterName":"Start/End"},"shape201":{"ShapeId":"shape201","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape203":{"ShapeId":"shape203","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape208","shape210"],"ConnectedFrom":["shape397"],"Layers":[1],"Text":"baneado?","MasterName":"Decision"},"shape204":{"ShapeId":"shape204","Layers":[2],"Text":"<user_raw_data>","MasterName":"Dynamic connector"},"shape206":{"ShapeId":"shape206","Layers":[2],"Text":"Si","MasterName":"Dynamic connector"},"shape205":{"ShapeId":"shape205","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape200","shape397"],"ConnectedFrom":["shape197"],"Layers":[1],"Text":"ExisteUsuario?*","MasterName":"Decision"},"shape208":{"ShapeId":"shape208","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape203"],"Layers":[1],"Text":"ERROR USUARIO BANEADO","MasterName":"Start/End"},"shape209":{"ShapeId":"shape209","Layers":[2],"Text":"<usuario>","MasterName":"Dynamic connector"},"shape210":{"ShapeId":"shape210","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape222","shape221"],"ConnectedFrom":["shape203"],"Layers":[1],"Text":"activo?","MasterName":"Decision"},"shape211":{"ShapeId":"shape211","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape212":{"ShapeId":"shape212","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape252"],"ConnectedFrom":["shape228","shape231"],"Layers":[1],"Text":"Añadir a lista de usuarios pendientes de validación de teléfono/mail","MasterName":"Start/End"},"shape215":{"ShapeId":"shape215","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape200"],"Layers":[1],"Text":"LOG USUARIO CREADO","MasterName":"Start/End"},"shape216":{"ShapeId":"shape216","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape217":{"ShapeId":"shape217","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape218":{"ShapeId":"shape218","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape246"],"ConnectedFrom":["shape252"],"Layers":[1],"Text":"Extraer datos del anuncio","MasterName":"Start/End"},"shape221":{"ShapeId":"shape221","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape228","shape231"],"ConnectedFrom":["shape210","shape222"],"Layers":[1],"Text":"Tiene anunciante?","MasterName":"Decision"},"shape222":{"ShapeId":"shape222","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape221","shape379"],"ConnectedFrom":["shape210"],"Layers":[1],"Text":"activar","MasterName":"Start/End"},"shape223":{"ShapeId":"shape223","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape224":{"ShapeId":"shape224","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape228":{"ShapeId":"shape228","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape212","shape381"],"ConnectedFrom":["shape200","shape221"],"Layers":[1],"Text":"Crear anunciante particular","MasterName":"Start/End"},"shape229":{"ShapeId":"shape229","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape230":{"ShapeId":"shape230","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape231":{"ShapeId":"shape231","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape212","shape252"],"ConnectedFrom":["shape221"],"Layers":[1],"Text":"Teléfono/mail validado?","MasterName":"Decision"},"shape232":{"ShapeId":"shape232","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape233":{"ShapeId":"shape233","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape234":{"ShapeId":"shape234","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape235":{"ShapeId":"shape235","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Mail","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape200"],"Layers":[1],"Text":"MAIL CREAR PASSWORD","MasterName":"Start/End"},"shape236":{"ShapeId":"shape236","Layers":[2],"Text":"<usuario>","MasterName":"Dynamic connector"},"shape241":{"ShapeId":"shape241","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape244":{"ShapeId":"shape244","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape247":{"ShapeId":"shape247","Layers":[2],"Text":"<ad raw data>","MasterName":"Dynamic connector"},"shape249":{"ShapeId":"shape249","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape250":{"ShapeId":"shape250","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape248"],"Layers":[1],"Text":"ERROR NO SE HA ENCONTRADO VERSIÓN","MasterName":"Start/End"},"shape251":{"ShapeId":"shape251","Layers":[2],"Text":"no <ad raw data>","MasterName":"Dynamic connector"},"shape252":{"ShapeId":"shape252","Props":{"":"Anunciante/Usuario"},"ConnectedTo":["shape218"],"ConnectedFrom":["shape231","shape212"],"Layers":[2,1],"Text":"","MasterName":"On-page reference"},"shape253":{"ShapeId":"shape253","Layers":[2],"Text":"<Advertiser Particular>","MasterName":"Dynamic connector"},"shape300":{"ShapeId":"shape300","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape308":{"ShapeId":"shape308","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape312":{"ShapeId":"shape312","Layers":[2],"Text":"<Anuncio>","MasterName":"Dynamic connector"},"shape320":{"ShapeId":"shape320","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape401"],"Layers":[1],"Text":"ERROR ANUNCIO YA EXISTENTE PARA ESE ANUNCIANTE","MasterName":"Start/End"},"shape321":{"ShapeId":"shape321","Layers":[2],"Text":"Si <anuncio>","MasterName":"Dynamic connector"},"shape329":{"ShapeId":"shape329","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape343"],"ConnectedFrom":["shape401"],"Comment":"Llamar al create de AdManager para que autovalide o no mande mail o no con el AdInterface creado anteriormente","Layers":[1],"Text":"Asigna anuncio a anunciante","TooltipMarkdown":"**Información extra:**\r\n\r\n{{Comment}}","MasterName":"Start/End"},"shape343":{"ShapeId":"shape343","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape46","shape348"],"ConnectedFrom":["shape329"],"Layers":[1],"Text":"Fin CSV?","MasterName":"Decision"},"shape345":{"ShapeId":"shape345","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape348":{"ShapeId":"shape348","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape350","shape352"],"ConnectedFrom":["shape343"],"Layers":[1],"Text":"Enviar mails de lista de validación teléfonos/mails","MasterName":"Start/End"},"shape349":{"ShapeId":"shape349","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape350":{"ShapeId":"shape350","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Mail","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape348"],"Layers":[1],"Text":"MAIL VALIDACIÓN TELÉfONO/MAIL","MasterName":"Start/End"},"shape351":{"ShapeId":"shape351","Layers":[2],"Text":"<anuncio, usuario>*N","MasterName":"Dynamic connector"},"shape352":{"ShapeId":"shape352","Props":{"":"Comando"},"ConnectedFrom":["shape348"],"Layers":[2,1],"Text":"","MasterName":"On-page reference"},"shape353":{"ShapeId":"shape353","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape246":{"ShapeId":"shape246","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape248"],"ConnectedFrom":["shape218"],"Layers":[1],"Text":"Matchear anuncio","MasterName":"Start/End"},"shape248":{"ShapeId":"shape248","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape250","shape299"],"ConnectedFrom":["shape246"],"Layers":[1],"Text":"Matcheo válido*?","MasterName":"Decision"},"shape299":{"ShapeId":"shape299","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape301"],"ConnectedFrom":["shape248"],"Layers":[1],"Text":"Crear anuncio","MasterName":"Start/End"},"shape301":{"ShapeId":"shape301","Props":{"":"Anuncio"},"ConnectedTo":["shape401"],"ConnectedFrom":["shape299"],"Layers":[2,1],"Text":"","MasterName":"On-page reference"},"shape377":{"ShapeId":"shape377","Text":"Francisco Garat Luque 21/04/2022 21:13"},"shape379":{"ShapeId":"shape379","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape222"],"Layers":[1],"Text":"LOG USUARIO ACTIVADO","MasterName":"Start/End"},"shape380":{"ShapeId":"shape380","Layers":[2],"Text":"<usuario>","MasterName":"Dynamic connector"},"shape381":{"ShapeId":"shape381","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape228"],"Layers":[1],"Text":"LOG ANUNCIANTE CREADO","MasterName":"Start/End"},"shape382":{"ShapeId":"shape382","Layers":[2],"Text":"<anunciante>","MasterName":"Dynamic connector"},"shape397":{"ShapeId":"shape397","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape203","shape400"],"ConnectedFrom":["shape205"],"Layers":[1],"Text":"Tiene max anuncios?","MasterName":"Decision"},"shape398":{"ShapeId":"shape398","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape399":{"ShapeId":"shape399","Layers":[2],"Text":"Si","MasterName":"Dynamic connector"},"shape400":{"ShapeId":"shape400","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape397"],"Layers":[1],"Text":"ERROR NO SE HA ENCONTRADO VERSIÓN","MasterName":"Start/End"},"shape401":{"ShapeId":"shape401","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape320","shape329"],"ConnectedFrom":["shape301"],"Layers":[1],"Text":"Anuncio ya existente?*","MasterName":"Decision"},"shape402":{"ShapeId":"shape402","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape403":{"ShapeId":"shape403","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape354":{"ShapeId":"shape354","Props":{"":"Comando"},"Layers":[5],"Text":"Evita que enviemos mails duplicados de validación","MasterName":"Note"},"shape435":{"ShapeId":"shape435","Props":{"":"Anunciante/Usuario"},"Layers":[4],"Text":"Crear un objeto del tipo AdInterface que luego se le pasará al AdManger","MasterName":"Note"},"shape437":{"ShapeId":"shape437","Props":{"":"Anunciante/Usuario"},"Layers":[4],"Text":"Llamar al metodo create del AdManager que lo pasará al estado AutoValidado o PendienteDeValidar según convenga. \nCuidado que si es autovalidado no enviará mail de anuncio publicado pero si está pendiente de validación, cuando se valide en el admin si enviará el mail.","MasterName":"Note"},"shape446":{"ShapeId":"shape446","Props":{"":"Anunciante/Usuario"},"Layers":[5],"Text":"Se considera el mismo usuario al que tenga el mismo email y o el teléfono es el mismo o, si no lo es no tiene anuncios publicados (en tal caso se pisa el teléfono aunque esté validado)","MasterName":"Note"},"shape450":{"ShapeId":"shape450","Props":{"":"Mail"},"Layers":[5],"Text":"Si se ha encontrado marca y modelo y tenemos los datos suficientes (requeridos por autocasion) para crear una versión custom.","MasterName":"Note"},"shape453":{"ShapeId":"shape453","Props":{"":"Comando"},"Layers":[5],"Text":"Si ese anunciante ya tiene un anuncio en el que coincidan marca, modelo y año.","MasterName":"Note"}},"pages":[{"Name":"Página-1","Id":16,"FileName":"index.html"},{"Name":"Página-2","Id":20,"FileName":"index__20.html"}],"currentPage":{"Name":"Página-1","Id":16,"FileName":"index.html"},"layers":[{"Name":"Diagrama de flujo","Index":1,"Visible":true},{"Name":"Conector","Index":2,"Visible":true},{"Name":"Contenedor","Index":3,"Visible":true},{"Name":"Comentarios","Index":4,"Visible":true},{"Name":"Funciones y validaciones","Index":5,"Visible":true}],"enableProps":true,"twoFingersTouch":false,"enableAutoFrameHeight":false,"enableLinks":true,"enablePages":true,"enablePageLookup":false,"enablePageSort":false,"enableZoomCtrl":false,"enableZoomShift":false,"enableSearch":false,"enableMultiPageSearch":false,"enableSidebar":true,"enableTooltips":true,"enableSelection":true,"enableHover":true,"enableLayers":true,"enableFollowHyperlinks":true,"openHyperlinksInNewWindow":true,"transformVisioFileLinks":false,"keepRelativeLinks":true,"rightSidebar":false,"alwaysHideSidebar":false,"showSidebarOnSelection":false,"enableSidbarTitle":false,"enableSidebarMarkdown":false,"enableTooltipMarkdown":false,"enableD3":true,"skipMinification":false,"enableBootstrapSwitch":false,"enableBootstrapSelect":false,"tooltipPlacement":"","popoverPlacement":"","enablePopovers":false,"enablePopoverMarkdown":false,"tooltipTrigger":"","tooltipOutsideClick":false,"tooltipUseMousePosition":false,"tooltipKeepOnHover":false,"tooltipTimeout":false,"tooltipTimeoutShow":"","sidebarDefaultWidth":"","tooltipTimeoutHide":"","popoverTrigger":"","popoverTimeout":false,"popoverOutsideClick":false,"popoverKeepOnHover":false,"popoverTimeoutShow":"","popoverTimeoutHide":"","popoverUseMousePosition":false,"enableContainerTip":false,"enablePropertySearch":false,"enablePropertySearchFilter":false,"processNested":false,"processBackground":false,"viewBox":"0 0 1560.13 2143.99","layerView":{"enableLayerLookup":false,"enableLayerSort":false,"enableLayerToggles":false,"enableLayerShowAll":true},"selectionView":{"enableBoxSelection":false,"enableBlur":false,"blur":2,"enableDilate":true,"dilate":4,"mode":"normal","selectColor":"rgba(255, 255, 0, 0.90)","hoverColor":"rgba(255, 255, 0, 0.30)","hyperlinkColor":"rgba(0, 0, 255, 0.30)"}}
+        window.svgpublish = {"shapes":{"shape20":{"ShapeId":"shape20","Text":"","IsContainer":true,"ContainerText":"Ingestion CSV Autobiz Tasaciones -> Anuncios","ContainerCategories":"","MasterName":"CFF Container"},"shape23":{"ShapeId":"shape23","Text":"","IsContainer":true,"ContainerText":"","ContainerCategories":"","MasterName":"Swimlane List"},"shape17":{"ShapeId":"shape17","Text":"","IsContainer":true,"ContainerText":"Comando","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape28":{"ShapeId":"shape28","Text":"","IsContainer":true,"ContainerText":"Anunciante/Usuario","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape31":{"ShapeId":"shape31","Text":"","IsContainer":true,"ContainerText":"Anuncio","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape34":{"ShapeId":"shape34","Text":"","IsContainer":true,"ContainerText":"Mail","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape194":{"ShapeId":"shape194","Text":"","IsContainer":true,"ContainerText":"Log","ContainerCategories":"Swimlane","MasterName":"Swimlane (vertical)"},"shape24":{"ShapeId":"shape24","Text":"","IsContainer":true,"ContainerText":"","ContainerCategories":"","MasterName":"Phase List"},"shape25":{"ShapeId":"shape25","Text":"","IsContainer":true,"ContainerText":"","ContainerCategories":"Phase","MasterName":"Separator (vertical)"},"shape356":{"ShapeId":"shape356","Props":{"":"Anunciante/Usuario"},"Layers":[3],"Text":"","IsContainer":true,"ContainerText":"GetOrCreateParticularAdvertiser","ContainerCategories":"Container","MasterName":"Subsystem"},"shape361":{"ShapeId":"shape361","Props":{"":"Anuncio"},"Layers":[3],"Text":"","IsContainer":true,"ContainerText":"CreateAd","ContainerCategories":"Container","MasterName":"Subsystem"},"shape46":{"ShapeId":"shape46","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape197"],"ConnectedFrom":["shape343"],"Layers":[1],"Text":"Cargar fila de csv","MasterName":"Start/End"},"shape197":{"ShapeId":"shape197","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape205"],"ConnectedFrom":["shape46"],"Layers":[1],"Text":"Extraer datos del usuario","MasterName":"Start/End"},"shape198":{"ShapeId":"shape198","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape200":{"ShapeId":"shape200","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape215","shape228","shape235"],"ConnectedFrom":["shape205"],"Layers":[1],"Text":"Crear Usuario","MasterName":"Start/End"},"shape201":{"ShapeId":"shape201","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape203":{"ShapeId":"shape203","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape208","shape210"],"ConnectedFrom":["shape397"],"Layers":[1],"Text":"baneado?","MasterName":"Decision"},"shape204":{"ShapeId":"shape204","Layers":[2],"Text":"<user_raw_data>","MasterName":"Dynamic connector"},"shape206":{"ShapeId":"shape206","Layers":[2],"Text":"Si","MasterName":"Dynamic connector"},"shape205":{"ShapeId":"shape205","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Existe usuario/anunciante","Fecha de inicio":null,"Fecha de finalización":null,"Estado":"","Descripción":"Se considera el mismo usuario al que tenga el mismo email y o el teléfono es el mismo o, si no lo es no tiene anuncios publicados (en tal caso se pisa el teléfono aunque esté validado)"},"ConnectedTo":["shape200","shape397"],"ConnectedFrom":["shape197"],"Layers":[1],"Text":"ExisteUsuario?*","MasterName":"Decision"},"shape208":{"ShapeId":"shape208","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape203"],"Layers":[1],"Text":"ERROR USUARIO BANEADO","MasterName":"Start/End"},"shape209":{"ShapeId":"shape209","Layers":[2],"Text":"<usuario>","MasterName":"Dynamic connector"},"shape210":{"ShapeId":"shape210","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape222","shape221"],"ConnectedFrom":["shape203"],"Layers":[1],"Text":"activo?","MasterName":"Decision"},"shape211":{"ShapeId":"shape211","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape212":{"ShapeId":"shape212","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"AddListaUserPending","Fecha de inicio":null,"Fecha de finalización":null,"Estado":"","Descripción":"Evita que enviemos mails duplicados de validación"},"ConnectedTo":["shape252"],"ConnectedFrom":["shape228","shape231"],"Layers":[1],"Text":"Añadir a lista de usuarios pendientes de validación de teléfono/mail","MasterName":"Start/End"},"shape215":{"ShapeId":"shape215","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape200"],"Layers":[1],"Text":"LOG USUARIO CREADO","MasterName":"Start/End"},"shape216":{"ShapeId":"shape216","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape217":{"ShapeId":"shape217","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape218":{"ShapeId":"shape218","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape246"],"ConnectedFrom":["shape252"],"Layers":[1],"Text":"Extraer datos del anuncio","MasterName":"Start/End"},"shape221":{"ShapeId":"shape221","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape228","shape231"],"ConnectedFrom":["shape210","shape222"],"Layers":[1],"Text":"Tiene anunciante?","MasterName":"Decision"},"shape222":{"ShapeId":"shape222","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape221","shape379"],"ConnectedFrom":["shape210"],"Layers":[1],"Text":"activar","MasterName":"Start/End"},"shape223":{"ShapeId":"shape223","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape224":{"ShapeId":"shape224","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape228":{"ShapeId":"shape228","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape212","shape381"],"ConnectedFrom":["shape200","shape221"],"Layers":[1],"Text":"Crear anunciante particular","MasterName":"Start/End"},"shape229":{"ShapeId":"shape229","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape230":{"ShapeId":"shape230","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape231":{"ShapeId":"shape231","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape212","shape252"],"ConnectedFrom":["shape221"],"Layers":[1],"Text":"Teléfono/mail validado?","MasterName":"Decision"},"shape232":{"ShapeId":"shape232","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape233":{"ShapeId":"shape233","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape234":{"ShapeId":"shape234","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape235":{"ShapeId":"shape235","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Mail","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape200"],"Layers":[1],"Text":"MAIL CREAR PASSWORD","MasterName":"Start/End"},"shape236":{"ShapeId":"shape236","Layers":[2],"Text":"<usuario>","MasterName":"Dynamic connector"},"shape241":{"ShapeId":"shape241","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape244":{"ShapeId":"shape244","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape247":{"ShapeId":"shape247","Layers":[2],"Text":"<ad raw data>","MasterName":"Dynamic connector"},"shape249":{"ShapeId":"shape249","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape250":{"ShapeId":"shape250","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape248"],"Layers":[1],"Text":"ERROR NO SE HA ENCONTRADO VERSIÓN","MasterName":"Start/End"},"shape251":{"ShapeId":"shape251","Layers":[2],"Text":"no <ad raw data>","MasterName":"Dynamic connector"},"shape252":{"ShapeId":"shape252","Props":{"":"Anunciante/Usuario"},"ConnectedTo":["shape218"],"ConnectedFrom":["shape231","shape212"],"Layers":[2,1],"Text":"","MasterName":"On-page reference"},"shape253":{"ShapeId":"shape253","Layers":[2],"Text":"<Advertiser Particular>","MasterName":"Dynamic connector"},"shape300":{"ShapeId":"shape300","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape308":{"ShapeId":"shape308","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape312":{"ShapeId":"shape312","Layers":[2],"Text":"<Anuncio>","MasterName":"Dynamic connector"},"shape320":{"ShapeId":"shape320","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape401"],"Layers":[1],"Text":"ERROR ANUNCIO YA EXISTENTE PARA ESE ANUNCIANTE","MasterName":"Start/End"},"shape321":{"ShapeId":"shape321","Layers":[2],"Text":"Si <anuncio>","MasterName":"Dynamic connector"},"shape329":{"ShapeId":"shape329","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"LinkarAnuncianteAnuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":"","Descripción":"Llamar al metodo create del AdManager que lo pasará al estado AutoValidado o PendienteDeValidar según convenga. \r\nCuidado que si es autovalidado no enviará mail de anuncio publicado pero si está pendiente de validación, cuando se valide en el admin si enviará el mail."},"ConnectedTo":["shape343"],"ConnectedFrom":["shape401"],"Comment":"Llamar al create de AdManager para que autovalide o no mande mail o no con el AdInterface creado anteriormente","Layers":[1],"Text":"Asigna anuncio a anunciante","TooltipMarkdown":"**Información extra:**\r\n\r\n{{Comment}}","MasterName":"Start/End"},"shape343":{"ShapeId":"shape343","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape46","shape348"],"ConnectedFrom":["shape329"],"Layers":[1],"Text":"Fin CSV?","MasterName":"Decision"},"shape345":{"ShapeId":"shape345","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape348":{"ShapeId":"shape348","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Comando","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape350","shape352"],"ConnectedFrom":["shape343"],"Layers":[1],"Text":"Enviar mails de lista de validación teléfonos/mails","MasterName":"Start/End"},"shape349":{"ShapeId":"shape349","Layers":[2],"Text":"si","MasterName":"Dynamic connector"},"shape350":{"ShapeId":"shape350","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Mail","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape348"],"Layers":[1],"Text":"MAIL VALIDACIÓN TELÉfONO/MAIL","MasterName":"Start/End"},"shape351":{"ShapeId":"shape351","Layers":[2],"Text":"<anuncio, usuario>*N","MasterName":"Dynamic connector"},"shape352":{"ShapeId":"shape352","Props":{"":"Comando"},"ConnectedFrom":["shape348"],"Layers":[2,1],"Text":"","MasterName":"On-page reference"},"shape353":{"ShapeId":"shape353","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape246":{"ShapeId":"shape246","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Matchear anuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":"","Descripción":"Si se ha encontrado marca y modelo y tenemos los datos suficientes (requeridos por autocasion) para crear una versión custom."},"ConnectedTo":["shape248"],"ConnectedFrom":["shape218"],"Layers":[1],"Text":"Matchear anuncio","MasterName":"Start/End"},"shape248":{"ShapeId":"shape248","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape250","shape299"],"ConnectedFrom":["shape246"],"Layers":[1],"Text":"Matcheo válido*?","MasterName":"Decision"},"shape299":{"ShapeId":"shape299","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Crear anuncio","Fecha de inicio":null,"Fecha de finalización":null,"Estado":"","Descripción":"Crear un objeto del tipo AdInterface que luego se le pasará al AdManger"},"ConnectedTo":["shape301"],"ConnectedFrom":["shape248"],"Layers":[1],"Text":"Crear anuncio","MasterName":"Start/End"},"shape301":{"ShapeId":"shape301","Props":{"":"Anuncio"},"ConnectedTo":["shape401"],"ConnectedFrom":["shape299"],"Layers":[2,1],"Text":"","MasterName":"On-page reference"},"shape377":{"ShapeId":"shape377","Text":"Francisco Garat Luque 21/04/2022 21:28"},"shape379":{"ShapeId":"shape379","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape222"],"Layers":[1],"Text":"LOG USUARIO ACTIVADO","MasterName":"Start/End"},"shape380":{"ShapeId":"shape380","Layers":[2],"Text":"<usuario>","MasterName":"Dynamic connector"},"shape381":{"ShapeId":"shape381","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape228"],"Layers":[1],"Text":"LOG ANUNCIANTE CREADO","MasterName":"Start/End"},"shape382":{"ShapeId":"shape382","Layers":[2],"Text":"<anunciante>","MasterName":"Dynamic connector"},"shape397":{"ShapeId":"shape397","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anunciante/Usuario","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedTo":["shape203","shape400"],"ConnectedFrom":["shape205"],"Layers":[1],"Text":"Tiene max anuncios?","MasterName":"Decision"},"shape398":{"ShapeId":"shape398","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape399":{"ShapeId":"shape399","Layers":[2],"Text":"Si","MasterName":"Dynamic connector"},"shape400":{"ShapeId":"shape400","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Log","Fecha de inicio":null,"Fecha de finalización":null,"Estado":""},"ConnectedFrom":["shape397"],"Layers":[1],"Text":"ERROR NO SE HA ENCONTRADO VERSIÓN","MasterName":"Start/End"},"shape401":{"ShapeId":"shape401","Props":{"Coste":null,"Número de proceso":null,"Propietario":null,"Función":"Anuncio existente","Fecha de inicio":null,"Fecha de finalización":null,"Estado":"","Descripción":"Si ese anunciante ya tiene un anuncio en el que coincidan marca, modelo y año."},"ConnectedTo":["shape320","shape329"],"ConnectedFrom":["shape301"],"Layers":[1],"Text":"Anuncio ya existente?*","MasterName":"Decision"},"shape402":{"ShapeId":"shape402","Layers":[2],"Text":"no","MasterName":"Dynamic connector"},"shape403":{"ShapeId":"shape403","Layers":[2],"Text":"","MasterName":"Dynamic connector"},"shape354":{"ShapeId":"shape354","Props":{"":"Comando"},"Layers":[5],"Text":"Evita que enviemos mails duplicados de validación","MasterName":"Note"},"shape435":{"ShapeId":"shape435","Props":{"":"Anunciante/Usuario"},"Layers":[4],"Text":"Crear un objeto del tipo AdInterface que luego se le pasará al AdManger","MasterName":"Note"},"shape437":{"ShapeId":"shape437","Props":{"":"Anunciante/Usuario"},"Layers":[4],"Text":"Llamar al metodo create del AdManager que lo pasará al estado AutoValidado o PendienteDeValidar según convenga. \nCuidado que si es autovalidado no enviará mail de anuncio publicado pero si está pendiente de validación, cuando se valide en el admin si enviará el mail.","MasterName":"Note"},"shape446":{"ShapeId":"shape446","Props":{"":"Anunciante/Usuario"},"Layers":[5],"Text":"Se considera el mismo usuario al que tenga el mismo email y o el teléfono es el mismo o, si no lo es no tiene anuncios publicados (en tal caso se pisa el teléfono aunque esté validado)","MasterName":"Note"},"shape450":{"ShapeId":"shape450","Props":{"":"Mail"},"Layers":[5],"Text":"Si se ha encontrado marca y modelo y tenemos los datos suficientes (requeridos por autocasion) para crear una versión custom.","MasterName":"Note"},"shape453":{"ShapeId":"shape453","Props":{"":"Comando"},"Layers":[5],"Text":"Si ese anunciante ya tiene un anuncio en el que coincidan marca, modelo y año.","MasterName":"Note"}},"pages":[{"Name":"Página-1","Id":16,"FileName":"index.html"}],"currentPage":{"Name":"Página-1","Id":16,"FileName":"index.html"},"layers":[{"Name":"Diagrama de flujo","Index":1,"Visible":true},{"Name":"Conector","Index":2,"Visible":true},{"Name":"Contenedor","Index":3,"Visible":true},{"Name":"Comentarios","Index":4,"Visible":true},{"Name":"Funciones y validaciones","Index":5,"Visible":true}],"enableProps":true,"twoFingersTouch":false,"enableAutoFrameHeight":false,"enableLinks":true,"enablePages":true,"enablePageLookup":false,"enablePageSort":false,"enableZoomCtrl":false,"enableZoomShift":false,"enableSearch":false,"enableMultiPageSearch":false,"enableSidebar":true,"enableTooltips":true,"enableSelection":true,"enableHover":true,"enableLayers":true,"enableFollowHyperlinks":true,"openHyperlinksInNewWindow":true,"transformVisioFileLinks":false,"keepRelativeLinks":true,"rightSidebar":false,"alwaysHideSidebar":false,"showSidebarOnSelection":false,"enableSidbarTitle":false,"enableSidebarMarkdown":false,"enableTooltipMarkdown":false,"enableD3":true,"skipMinification":false,"enableBootstrapSwitch":false,"enableBootstrapSelect":false,"tooltipPlacement":"","popoverPlacement":"","enablePopovers":false,"enablePopoverMarkdown":false,"tooltipTrigger":"","tooltipOutsideClick":false,"tooltipUseMousePosition":false,"tooltipKeepOnHover":false,"tooltipTimeout":false,"tooltipTimeoutShow":"","sidebarDefaultWidth":"","tooltipTimeoutHide":"","popoverTrigger":"","popoverTimeout":false,"popoverOutsideClick":false,"popoverKeepOnHover":false,"popoverTimeoutShow":"","popoverTimeoutHide":"","popoverUseMousePosition":false,"enableContainerTip":false,"enablePropertySearch":false,"enablePropertySearchFilter":false,"processNested":false,"processBackground":false,"viewBox":"0 0 1560.13 2143.99","layerView":{"enableLayerLookup":false,"enableLayerSort":false,"enableLayerToggles":false,"enableLayerShowAll":true},"selectionView":{"enableBoxSelection":false,"enableBlur":false,"blur":2,"enableDilate":true,"dilate":4,"mode":"normal","selectColor":"rgba(255, 255, 0, 0.90)","hoverColor":"rgba(255, 255, 0, 0.30)","hyperlinkColor":"rgba(0, 0, 255, 0.30)"}}
         $(document).ready(function () { $("div.svg").panzoom({ svg: $("div.svg > svg").get(0), viewBox: "0 0 1560.13 2143.99" }).removeClass("appear"); });
   </script>
   <script src="vp/vp-script-1.3.3.min.js"></script>
@@ -152,16 +152,16 @@
 	.st21 {marker-end:url(#mrkr5-178);stroke:#173f42;stroke-linecap:butt;stroke-width:1;}
 	.st22 {fill:#173f42;fill-opacity:1;stroke:#173f42;stroke-opacity:1;stroke-width:0.28409090909091;}
 	.st23 {fill:#ec5955;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
-	.st24 {fill:#ffffff;stroke:none;stroke-linecap:butt;}
+	.st24 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2;}
 	.st25 {fill:#1e5054;font-family:Franklin Gothic Book;font-size:0.666664em;}
 	.st26 {fill:#fbe0d0;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
 	.st27 {fill:#000000;font-family:Franklin Gothic Book;font-size:0.666664em;}
-	.st28 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2;}
-	.st29 {fill:#754673;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
-	.st30 {fill:#dce6eb;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
-	.st31 {marker-end:url(#mrkr5-178);stroke:#173f42;stroke-dasharray:16,8;stroke-linecap:butt;stroke-width:1;}
-	.st32 {fill:#6aac91;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
-	.st33 {fill:url(#grad0-408);stroke:#a2460e;stroke-linecap:butt;stroke-width:1;}
+	.st28 {fill:#754673;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
+	.st29 {fill:#dce6eb;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
+	.st30 {marker-end:url(#mrkr5-178);stroke:#173f42;stroke-dasharray:16,8;stroke-linecap:butt;stroke-width:1;}
+	.st31 {fill:#6aac91;stroke:#21483f;stroke-linecap:butt;stroke-width:1;}
+	.st32 {fill:url(#grad0-408);stroke:#a2460e;stroke-linecap:butt;stroke-width:1;}
+	.st33 {fill:#ffffff;stroke:none;stroke-linecap:butt;}
 	.st34 {fill:none;stroke:none;stroke-linecap:butt;stroke-width:1;}
 	.st35 {fill:#ffffff;font-family:Franklin Gothic Book;font-size:0.75em;}
 	.st36 {fill:none;filter:url(#filter_3.3333334922791);stroke:#000000;stroke-linecap:butt;stroke-opacity:0.6;}
@@ -539,7 +539,7 @@
 			
 			
 			<path d="M0 2136.9 L223.8 2136.9" class="st21" />
-			<rect x="85.1617" y="2132.1" width="59.6371" height="9.59985" class="st28" />
+			<rect x="85.1617" y="2132.1" width="59.6371" height="9.59985" class="st24" />
 			<text x="85.16" y="2139.3" class="st25">&lt;user_raw_data&gt;</text>		</g>
 		<g id="shape206" transform="translate(440.972,-1897.91)" class="dynamic-connector">
 			
@@ -548,7 +548,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2193.22" class="st21" />
-			<rect x="3.53695" y="2163.4" width="6.39047" height="9.59985" class="st28" />
+			<rect x="3.53695" y="2163.4" width="6.39047" height="9.59985" class="st24" />
 			<text x="3.54" y="2170.6" class="st25">Si</text>		</g>
 		<g id="shape205" transform="translate(412.626,-1897.91)" class="decision">
 			
@@ -572,7 +572,7 @@
 			<g id="shadow208-219" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st29" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st28" />
 			<text x="6.21" y="2132.22" class="st19">ERROR USUARIO BANEADO</text>		</g>
 		<g id="shape209" transform="translate(483.492,-1680.66)" class="dynamic-connector">
 			
@@ -602,7 +602,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2180.35" class="st21" />
-			<rect x="2.84046" y="2160.45" width="8.49216" height="9.59985" class="st28" />
+			<rect x="2.84046" y="2160.45" width="8.49216" height="9.59985" class="st24" />
 			<text x="2.84" y="2167.65" class="st25">no</text>		</g>
 		<g id="shape212" transform="translate(306.327,-1227.54)" class="start/end">
 			
@@ -626,12 +626,12 @@
 			<g id="shadow215-256" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st30" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st29" />
 			<text x="13.63" y="2132.22" class="st27">LOG USUARIO CREADO</text>		</g>
 		<g id="shape216" transform="translate(377.193,-1764.57)" class="dynamic-connector">
 			
 			
-			<path d="M0 2151.08 L64.2 2151.08 A2.34 2.34 -180 0 0 66.41 2149.51 A4.72441 4.72441 0 0 1 75.32 2149.51 A2.34 2.34 -180        0 0 77.53 2151.08 L663.69 2151.08" class="st31" />
+			<path d="M0 2151.08 L64.2 2151.08 A2.34 2.34 -180 0 0 66.41 2149.51 A4.72441 4.72441 0 0 1 75.32 2149.51 A2.34 2.34 -180        0 0 77.53 2151.08 L663.69 2151.08" class="st30" />
 		</g>
 		<g id="shape217" transform="translate(334.673,-1743.31)" class="dynamic-connector">
 			
@@ -681,7 +681,7 @@
 			
 			
 			<path d="M0 2143.99 L75.61 2143.99 A2.34 2.34 0 0 1 77.95 2146.33 L77.95 2180.12" class="st21" />
-			<rect x="13.6121" y="2139.19" width="8.49216" height="9.59985" class="st28" />
+			<rect x="13.6121" y="2139.19" width="8.49216" height="9.59985" class="st24" />
 			<text x="13.61" y="2146.39" class="st25">no</text>		</g>
 		<g id="shape224" transform="translate(440.972,-1544.31)" class="dynamic-connector">
 			
@@ -711,7 +711,7 @@
 			
 			
 			<path d="M0 2143.99 L-68.53 2143.99 A2.34 2.34 -180 0 0 -70.87 2146.33 L-70.87 2192.09" class="st21" />
-			<rect x="-28.9076" y="2140.89" width="8.49216" height="9.59985" class="st28" />
+			<rect x="-28.9076" y="2140.89" width="8.49216" height="9.59985" class="st24" />
 			<text x="-28.91" y="2148.09" class="st25">no</text>		</g>
 		<g id="shape230" transform="translate(334.673,-1364.76)" class="dynamic-connector">
 			
@@ -737,7 +737,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2265.39" class="st21" />
-			<rect x="4.31316" y="2154.5" width="5.54672" height="9.59985" class="st28" />
+			<rect x="4.31316" y="2154.5" width="5.54672" height="9.59985" class="st24" />
 			<text x="4.31" y="2161.7" class="st25">si</text>		</g>
 		<g id="shape233" transform="translate(526.012,-1516.76)" class="dynamic-connector">
 			
@@ -751,7 +751,7 @@
 			
 			
 			<path d="M0 2151.08 L-29.27 2151.08" class="st21" />
-			<rect x="-21.9627" y="2146.28" width="8.49216" height="9.59985" class="st28" />
+			<rect x="-21.9627" y="2146.28" width="8.49216" height="9.59985" class="st24" />
 			<text x="-21.96" y="2153.48" class="st25">no</text>		</g>
 		<g id="shape235" transform="translate(880.335,-1706.99)" class="start/end">
 			
@@ -763,7 +763,7 @@
 			<g id="shadow235-352" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st32" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st31" />
 			<text x="10.5" y="2132.22" class="st19">MAIL CREAR PASSWORD</text>		</g>
 		<g id="shape236" transform="translate(377.193,-1757.48)" class="dynamic-connector">
 			
@@ -771,8 +771,8 @@
 			
 			
 			
-			<path d="M0 2143.99 L64.2 2143.99 A2.34 2.34 -180 0 0 66.41 2142.43 A4.72441 4.72441 0 0 1 75.32 2142.43 A2.34 2.34 -180        0 0 77.53 2143.99 L552.96 2143.99 A2.34 2.34 0 0 1 555.3 2146.33 L555.3 2159.98" class="st31" />
-			<rect x="271.475" y="2139.19" width="34.6168" height="9.59985" class="st28" />
+			<path d="M0 2143.99 L64.2 2143.99 A2.34 2.34 -180 0 0 66.41 2142.43 A4.72441 4.72441 0 0 1 75.32 2142.43 A2.34 2.34 -180        0 0 77.53 2143.99 L552.96 2143.99 A2.34 2.34 0 0 1 555.3 2146.33 L555.3 2159.98" class="st30" />
+			<rect x="271.475" y="2139.19" width="34.6168" height="9.59985" class="st24" />
 			<text x="271.47" y="2146.39" class="st25">&lt;usuario&gt;</text>		</g>
 		<g id="shape241" transform="translate(440.972,-1233.07)" class="dynamic-connector">
 			
@@ -781,7 +781,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2197.36" class="st21" />
-			<rect x="4.31316" y="2153.36" width="5.54672" height="9.59985" class="st28" />
+			<rect x="4.31316" y="2153.36" width="5.54672" height="9.59985" class="st24" />
 			<text x="4.31" y="2160.56" class="st25">si</text>		</g>
 		<g id="shape244" transform="translate(341.76,-1227.54)" class="dynamic-connector">
 			
@@ -795,7 +795,7 @@
 			
 			
 			<path d="M0 2143.99 L0 2174.74 A2.34 2.34 -180 0 0 2.34 2177.08 L587.44 2177.08 A2.34 2.34 0 0 1 589.78 2179.42 L589.78        2181.55" class="st21" />
-			<rect x="258.99" y="2172.28" width="49.3325" height="9.59985" class="st28" />
+			<rect x="258.99" y="2172.28" width="49.3325" height="9.59985" class="st24" />
 			<text x="258.99" y="2179.48" class="st25">&lt;ad raw data&gt;</text>		</g>
 		<g id="shape249" transform="translate(729.921,-990.921)" class="dynamic-connector">
 			
@@ -812,7 +812,7 @@
 			<g id="shadow250-389" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st29" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st28" />
 			<text x="22.76" y="2127.42" class="st19">ERROR NO SE HA <tspan x="12" dy="1.2em" class="st20">ENCONTRADO VERSIÓN</tspan></text>		</g>
 		<g id="shape251" transform="translate(772.441,-937.181)" class="dynamic-connector">
 			
@@ -821,7 +821,7 @@
 			
 			
 			<path d="M0 2151.08 L268.45 2151.08" class="st21" />
-			<rect x="106.151" y="2145.19" width="59.8247" height="9.59985" class="st28" />
+			<rect x="106.151" y="2145.19" width="59.8247" height="9.59985" class="st24" />
 			<text x="106.15" y="2152.39" class="st25">no &lt;ad raw data&gt;</text>		</g>
 		<g id="shape252" transform="translate(435.303,-1148.03)" class="on-page-reference">
 			
@@ -830,7 +830,7 @@
 			<g id="shadow252-403" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st3" />
 			</g>
-			<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st33" />
+			<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st32" />
 		</g>
 		<g id="shape253" transform="translate(435.303,-1160.79)" class="dynamic-connector">
 			
@@ -839,7 +839,7 @@
 			
 			
 			<path d="M0 2143.99 L-285.73 2143.99 A2.34 2.34 -180 0 0 -288.07 2146.33 L-288.07 2207.28" class="st21" />
-			<rect x="-217.561" y="2139.19" width="77.5898" height="9.59985" class="st28" />
+			<rect x="-217.561" y="2139.19" width="77.5898" height="9.59985" class="st24" />
 			<text x="-217.56" y="2146.39" class="st25">&lt;Advertiser Particular&gt;</text>		</g>
 		<g id="shape300" transform="translate(729.921,-901.181)" class="dynamic-connector">
 			
@@ -848,7 +848,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2175.65" class="st21" />
-			<rect x="4.31318" y="2158.1" width="5.54672" height="9.59985" class="st28" />
+			<rect x="4.31318" y="2158.1" width="5.54672" height="9.59985" class="st24" />
 			<text x="4.31" y="2165.3" class="st25">si</text>		</g>
 		<g id="shape308" transform="translate(729.921,-835.016)" class="dynamic-connector">
 			
@@ -862,7 +862,7 @@
 			
 			
 			<path d="M0 2143.99 L0 2190.28 A2.34 2.34 0 0 1 -2.34 2192.62 L-587.44 2192.62 A2.34 2.34 -180 0 0 -589.78 2194.96 L-589.78        2207.72" class="st21" />
-			<rect x="-300.197" y="2187.82" width="36.3906" height="9.59985" class="st28" />
+			<rect x="-300.197" y="2187.82" width="36.3906" height="9.59985" class="st24" />
 			<text x="-300.2" y="2195.02" class="st25">&lt;Anuncio&gt;</text>		</g>
 		<g id="shape320" transform="translate(1047.05,-657.836)" class="start/end">
 			
@@ -874,7 +874,7 @@
 			<g id="shadow320-436" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M17.01 2143.99 L87.31 2143.99 A17.0079 17.0079 -180 0 0 87.31 2109.97 L17.01 2109.97 A17.0079 17.0079 -180         1 0 17.01 2143.99 Z" class="st3" />
 			</g>
-			<path d="M17.01 2143.99 L87.31 2143.99 A17.0079 17.0079 -180 0 0 87.31 2109.97 L17.01 2109.97 A17.0079 17.0079 -180 1        0 17.01 2143.99 Z" class="st29" />
+			<path d="M17.01 2143.99 L87.31 2143.99 A17.0079 17.0079 -180 0 0 87.31 2109.97 L17.01 2109.97 A17.0079 17.0079 -180 1        0 17.01 2143.99 Z" class="st28" />
 			<text x="18.24" y="2119.78" class="st19">ERROR ANUNCIO YA <tspan x="16.08" dy="1.2em" class="st20">EXISTENTE PARA ESE </tspan><tspan x="30.11" dy="1.2em" class="st20">ANUNCIANTE</tspan></text>		</g>
 		<g id="shape321" transform="translate(182.665,-681.931)" class="dynamic-connector">
 			
@@ -883,7 +883,7 @@
 			
 			
 			<path d="M0 2151.08 L858.22 2151.08" class="st21" />
-			<rect x="409.828" y="2146.28" width="44.7264" height="9.59985" class="st28" />
+			<rect x="409.828" y="2146.28" width="44.7264" height="9.59985" class="st33" />
 			<text x="409.83" y="2153.48" class="st25">Si &lt;anuncio&gt;</text>		</g>
 		<g id="shape329" transform="translate(111.799,-577.499)" class="start/end">
 			
@@ -916,7 +916,7 @@
 			
 			
 			<path d="M7.09 2143.99 L-40.18 2143.99 A2.34 2.34 0 0 1 -42.52 2141.65 L-42.52 692.89 A2.34 2.34 0 0 1 -40.18 690.55        L0.93 690.55" class="st21" />
-			<rect x="-46.7658" y="1412.47" width="8.49216" height="9.59985" class="st28" />
+			<rect x="-46.7658" y="1412.47" width="8.49216" height="9.59985" class="st24" />
 			<text x="-46.77" y="1419.67" class="st25">no</text>		</g>
 		<g id="shape348" transform="translate(111.799,-367.203)" class="start/end">
 			
@@ -937,7 +937,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2196.39" class="st21" />
-			<rect x="4.31318" y="2168.47" width="5.54672" height="9.59985" class="st28" />
+			<rect x="4.31318" y="2168.47" width="5.54672" height="9.59985" class="st24" />
 			<text x="4.31" y="2175.67" class="st25">si</text>		</g>
 		<g id="shape350" transform="translate(880.335,-382.51)" class="start/end">
 			
@@ -949,7 +949,7 @@
 			<g id="shadow350-488" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st32" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st31" />
 			<text x="2.39" y="2127.42" class="st19">MAIL VALIDACIÓN TELÉfONO/<tspan x="43.82" dy="1.2em" class="st20">MAIL</tspan></text>		</g>
 		<g id="shape351" transform="translate(182.665,-389.313)" class="dynamic-connector">
 			
@@ -957,8 +957,8 @@
 			
 			
 			
-			<path d="M0 2137.19 L20.98 2137.19 a0.283463 0.283463 -180 0 0 0.283463 -0.283463 L21.26 2136.9 a0.283463 0.283463 0        0 1 0.283463 -0.283463 L691.51 2136.62" class="st31" />
-			<rect x="310.784" y="2131.82" width="75.5192" height="9.59985" class="st28" />
+			<path d="M0 2137.19 L20.98 2137.19 a0.283463 0.283463 -180 0 0 0.283463 -0.283463 L21.26 2136.9 a0.283463 0.283463 0        0 1 0.283463 -0.283463 L691.51 2136.62" class="st30" />
+			<rect x="310.784" y="2131.82" width="75.5192" height="9.59985" class="st24" />
 			<text x="310.78" y="2139.02" class="st25">&lt;anuncio, usuario&gt;*N</text>		</g>
 		<g id="shape352" transform="translate(134.476,-288.766)" class="on-page-reference">
 			
@@ -967,7 +967,7 @@
 			<g id="shadow352-502" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st3" />
 			</g>
-			<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st33" />
+			<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st32" />
 		</g>
 		<g id="shape353" transform="translate(140.146,-367.203)" class="dynamic-connector">
 			
@@ -1017,7 +1017,7 @@
 			<g id="shadow301-533" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st3" />
 			</g>
-			<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st33" />
+			<path d="M0 2131.23 A12.7559 12.7559 0 0 1 25.51 2131.23 A12.7559 12.7559 0 1 1 0 2131.23 Z" class="st32" />
 		</g>
 		<g id="shape377" transform="translate(955.531,-2077.8)">
 			
@@ -1025,7 +1025,7 @@
 			
 			
 			<rect x="0" y="2115.64" width="192.685" height="28.3464" class="st34" />
-			<text x="14.36" y="2132.52" class="st35">Francisco Garat Luque 21/04/2022 21:13</text>		</g>
+			<text x="14.36" y="2132.52" class="st35">Francisco Garat Luque 21/04/2022 21:28</text>		</g>
 		<g id="shape379" transform="translate(1047.05,-1502.36)" class="start/end">
 			
 			<desc>LOG USUARIO ACTIVADO</desc>
@@ -1036,7 +1036,7 @@
 			<g id="shadow379-542" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st30" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st29" />
 			<text x="11.04" y="2132.22" class="st27">LOG USUARIO ACTIVADO</text>		</g>
 		<g id="shape380" transform="translate(596.878,-1523.74)" class="dynamic-connector">
 			
@@ -1044,8 +1044,8 @@
 			
 			
 			
-			<path d="M0 2150.96 L21.14 2150.96 a0.114973 0.114973 0 0 1 0.114973 0.114973 L21.26 2151.08 a0.114973 0.114973 -180        0 0 0.114973 0.114973 L444.01 2151.19" class="st31" />
-			<rect x="207.729" y="2148.05" width="34.6168" height="9.59985" class="st28" />
+			<path d="M0 2150.96 L21.14 2150.96 a0.114973 0.114973 0 0 1 0.114973 0.114973 L21.26 2151.08 a0.114973 0.114973 -180        0 0 0.114973 0.114973 L444.01 2151.19" class="st30" />
+			<rect x="207.729" y="2148.05" width="34.6168" height="9.59985" class="st24" />
 			<text x="207.73" y="2155.25" class="st25">&lt;usuario&gt;</text>		</g>
 		<g id="shape381" transform="translate(1047.05,-1364.76)" class="start/end">
 			
@@ -1057,7 +1057,7 @@
 			<g id="shadow381-555" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st30" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st29" />
 			<text x="6.83" y="2132.22" class="st27">LOG ANUNCIANTE CREADO</text>		</g>
 		<g id="shape382" transform="translate(377.193,-1386.02)" class="dynamic-connector">
 			
@@ -1065,8 +1065,8 @@
 			
 			
 			
-			<path d="M0 2151.08 L64.2 2151.08 A2.34 2.34 -180 0 0 66.41 2149.51 A4.72441 4.72441 0 0 1 75.32 2149.51 A2.34 2.34 -180        0 0 77.53 2151.08 L663.69 2151.08" class="st31" />
-			<rect x="310.743" y="2147.93" width="47.3714" height="9.59985" class="st28" />
+			<path d="M0 2151.08 L64.2 2151.08 A2.34 2.34 -180 0 0 66.41 2149.51 A4.72441 4.72441 0 0 1 75.32 2149.51 A2.34 2.34 -180        0 0 77.53 2151.08 L663.69 2151.08" class="st30" />
+			<rect x="310.743" y="2147.93" width="47.3714" height="9.59985" class="st24" />
 			<text x="310.74" y="2155.13" class="st25">&lt;anunciante&gt;</text>		</g>
 		<g id="shape397" transform="translate(412.626,-1800)" class="decision">
 			
@@ -1087,7 +1087,7 @@
 			
 			
 			<path d="M7.09 2143.99 L7.09 2235.34" class="st21" />
-			<rect x="2.84044" y="2160.92" width="8.49216" height="9.59985" class="st28" />
+			<rect x="2.84044" y="2160.92" width="8.49216" height="9.59985" class="st24" />
 			<text x="2.84" y="2168.12" class="st25">no</text>		</g>
 		<g id="shape399" transform="translate(483.492,-1828.34)" class="dynamic-connector">
 			
@@ -1096,7 +1096,7 @@
 			
 			
 			<path d="M0 2151.08 L550.24 2151.08" class="st21" />
-			<rect x="20.3176" y="2146.28" width="6.39047" height="9.59985" class="st28" />
+			<rect x="20.3176" y="2146.28" width="6.39047" height="9.59985" class="st24" />
 			<text x="20.32" y="2153.48" class="st25">Si</text>		</g>
 		<g id="shape400" transform="translate(1039.89,-1807.09)" class="start/end">
 			
@@ -1108,7 +1108,7 @@
 			<g id="shadow400-589" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 				<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180         1 0 14.17 2143.99 Z" class="st3" />
 			</g>
-			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st29" />
+			<path d="M14.17 2143.99 L90.14 2143.99 A14.1732 14.1732 -180 0 0 90.14 2115.64 L14.17 2115.64 A14.1732 14.1732 -180 1        0 14.17 2143.99 Z" class="st28" />
 			<text x="22.76" y="2127.42" class="st19">ERROR NO SE HA <tspan x="12" dy="1.2em" class="st20">ENCONTRADO VERSIÓN</tspan></text>		</g>
 		<g id="shape401" transform="translate(111.799,-645.931)" class="decision">
 			
@@ -1198,11 +1198,11 @@
 				
 				<g id="shadow437-664" transform="matrix(1,0,0,1,0,3.00236)" class="st2">
 					<path d="M0 2143.99 L300.66 2143.99 L300.66 2054.7 L292.15 2046.2 L0 2046.2 L0 2143.99 Z" class="st7" />
-					<path d="M0 2090.26 L-143.27 2085.66" class="st36" />
+					<path d="M0 2090.26 L-178.66 2084.52" class="st36" />
 					<path d="M0 2143.99 L300.66 2143.99 L300.66 2054.7 L292.15 2046.2 L0 2046.2 L0 2143.99" class="st36" />
 				</g>
 				<path d="M0 2143.99 L300.66 2143.99 L300.66 2054.7 L292.15 2046.2 L0 2046.2 L0 2143.99 Z" class="st37" />
-				<path d="M0 2090.26 L-143.27 2085.66" class="st38" />
+				<path d="M0 2090.26 L-178.66 2084.52" class="st38" />
 				<path d="M0 2143.99 L300.66 2143.99 L300.66 2054.7 L292.15 2046.2 L0 2046.2 L0 2143.99" class="st38" />
 				<text x="4" y="2062.69" class="st13">Llamar al metodo create del AdManager que lo pasará al <tspan x="4" dy="1.2em" class="st20">estado AutoValidado o PendienteDeValidar según </tspan><tspan x="4" dy="1.2em" class="st20">convenga. </tspan><tspan x="4" dy="1.2em" class="st41">Cuidado </tspan>que si es autovalidado no enviará mail de <tspan x="4" dy="1.2em" class="st20">anuncio publicado pero si está pendiente de validación, </tspan><tspan x="4" dy="1.2em" class="st20">cuando se valide en el admin si enviará el mail.</tspan></text>			</g>
 			<g id="shape438-680" transform="translate(292.154,-89.2913)">
